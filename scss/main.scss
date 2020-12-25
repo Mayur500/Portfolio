@@ -1,0 +1,286 @@
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,400;1,700&display=swap");
+@import './mobiles.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+}
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+button {
+  outline: none;
+}
+header {
+  position: relative;
+   height: 100vh;
+  width: 100%;
+  background-image: url("../images/background-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  nav {
+    width: 80vw;
+    padding-top: 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      img {
+        width: 5rem;
+        border: solid;
+        border-radius: 50%;
+      }
+    }
+
+    .right {
+      ul {
+        width: 40vw;
+        margin-right: 5rem;
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+
+        li a {
+          transition:all 0.2s;
+          color: $white;
+          text-decoration: none;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    h4 {
+
+      text-align: center;
+      font-size: 25px;
+      color: $white;
+      line-height: 3rem;
+
+      &:before {
+        display: block;
+        content: "I am Mayur Goyal";
+      }
+      &:after {
+        display: block;
+        content: "Full Stack Developer";
+      }
+    }
+
+    button {
+      margin-top: 2rem;
+      margin-left: 4rem;
+      padding: 0.5rem;
+      background-color: $primary;
+      border: solid $dark;
+      border-radius: 5rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.body-content {
+  padding-top: 2rem;
+  .about {
+    padding: 8rem;
+    .skills-column {
+      text-align: center;
+      h2 {
+        padding-bottom: 5rem;
+      }
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto auto;
+      grid-gap: 20px;
+      div {
+        transition:all 0.2s;
+        border: solid $dark 1px;
+        padding: 2rem 2rem;
+        background-color: $primary;
+        text-align: center;
+
+        &:hover {
+          background-color: $primary-dark;
+        }
+      }
+      margin-right: 2rem;
+    }
+
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+    align-items: center;
+
+    .education {
+      border: solid white;
+      padding: 1rem 12rem;
+      border-radius: 5%;
+      border-left-color: red;
+      text-align: center;
+      background-color: $primary;
+
+      ul {
+        font-size: large;
+        font-weight: 900;
+
+        line-height: 3rem;
+        margin: 3.5rem;
+
+        list-style-type: none;
+        text-decoration: none;
+      }
+      &:hover {
+        background-color: $primary-dark;
+      }
+    }
+  }
+  .about-text {
+    text-align: center;
+  }
+  hr {
+    border: solid red;
+    margin-top: 2rem;
+    width: 40vw;
+    margin-left: 30vw;
+  }
+
+  .work-box {
+    height:100vh;
+    padding-top: 2rem;
+    padding-right: 1.5rem;
+    text-align: center;
+    h2 {
+      padding-bottom: 2rem;
+    }
+    background-color: $primary;
+    .work {
+      div {
+        h3 {
+          padding-top: 2rem;
+        }
+
+        hr {
+          margin-left: 70px;
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+          width: 70%;
+        }
+        text-align: center;
+        margin-left: 2rem;
+
+        img {
+          transition:all 0.2s;
+          width: 100%;
+          height: 20rem;
+          border: solid $primary 1px;
+          border-left-color: $primary-dark;
+          border-radius: 5%;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        a {
+          display: inline-block;
+          text-decoration: none;
+          color: $dark;
+          font-weight: 900;
+          padding: 0.5rem;
+          background-color: $white;
+          border: solid red 0px;
+          border-radius: 10%;
+          margin-top: 1rem;
+
+          &:hover {
+            background-color: $primary-hover;
+          }
+        }
+      }
+
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+  }
+}
+.contact{
+  height: 100vh;
+  background-color:$dark;
+  h2{
+    padding-top:2rem;
+    color:$white;
+    text-align: center;
+  }
+  .gmail{
+
+    img{
+      cursor:pointer;
+      width:5rem;
+      margin-left:50%;
+      margin-top:4rem;
+      transform: translate(-50%,-50%); 
+    }
+
+     h3{
+     visibility: hidden;
+      text-align: center;
+      color:$white;  
+    }
+  }  
+ 
+}
+.contact-details{
+  padding:2rem 0rem;
+ 
+ul{
+  margin-top:2rem;
+  display:flex;
+  justify-content: space-around;
+  li{
+    list-style-type: none;
+  }
+
+  img{
+    cursor: pointer;
+    transition:all 0.2s;
+    width:5rem;
+
+    &:hover{
+      transform: scale(1.5);
+    }
+  }
+  }
+}
+footer{
+  display: flex;
+ justify-content: space-between;
+  background-color:$primary-hover;
+  padding:2rem;
+  height: 5rem;
+
+  span{
+   
+    font-size: large;
+  font-weight: bold;
+    
+    
+  }
+}

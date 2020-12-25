@@ -1,0 +1,71 @@
+@media (max-width: 1160px) {
+  html {
+    width: 100vw;
+    font-size: 6px;
+  }
+  nav {
+    .right {
+      ul {
+        width: 50vw !important;
+        justify-content: space-between !important;
+        font-size: 2rem !important;
+      }
+    }
+  }
+  .content {
+    h4 {
+      font-size: 15px !important;
+      line-height: 5rem !important;
+    }
+  }
+  .about {
+    height: 93vh;
+    flex-direction: column !important;
+    font-size: large !important;
+    .education {
+      width: 100vw !important;
+    }
+    margin: 0 0 !important;
+
+    .education ul {
+      line-height: 5rem !important;
+    }
+  }
+  .work {
+    grid-template-columns: auto !important ;
+    grid-template-rows: auto auto auto;
+
+    img {
+      width: 50vw !important;
+    }
+    a {
+      display: block !important;
+      width: 8vw;
+      margin-left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  .contact-details {
+    ul {
+      flex-direction: column !important;
+      align-items: center !important;
+      img {
+        margin-top: 4rem !important;
+      }
+    }
+  }
+  hr {
+    margin-left: 24vw !important;
+    width: 40vw !important;
+  }
+  footer {
+    padding: 2rem !important;
+    font-weight: normal !important;
+    height: 2rem !important;
+
+    span {
+      font-weight: normal !important;
+      font-size: 7px !important;
+    }
+  }
+}

@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,400;1,700&display=swap");
+@media (max-width: 1160px) {
+  html {
+    width: 100vw;
+    font-size: 6px; }
+  nav .right ul {
+    width: 50vw !important;
+    justify-content: space-between !important;
+    font-size: 2rem !important; }
+  .content h4 {
+    font-size: 15px !important;
+    line-height: 5rem !important; }
+  .about {
+    height: 93vh;
+    flex-direction: column !important;
+    font-size: large !important;
+    margin: 0 0 !important; }
+    .about .education {
+      width: 100vw !important; }
+    .about .education ul {
+      line-height: 5rem !important; }
+  .work {
+    grid-template-columns: auto !important;
+    grid-template-rows: auto auto auto; }
+    .work img {
+      width: 50vw !important; }
+    .work a {
+      display: block !important;
+      width: 8vw;
+      margin-left: 50%;
+      transform: translate(-50%, 0); }
+  .contact-details ul {
+    flex-direction: column !important;
+    align-items: center !important; }
+    .contact-details ul img {
+      margin-top: 4rem !important; }
+  hr {
+    margin-left: 24vw !important;
+    width: 40vw !important; }
+  footer {
+    padding: 2rem !important;
+    font-weight: normal !important;
+    height: 2rem !important; }
+    footer span {
+      font-weight: normal !important;
+      font-size: 7px !important; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Serif", serif; }
+
+html {
+  scroll-behavior: smooth; }
+
+button {
+  outline: none; }
+
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/background-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  header nav {
+    width: 80vw;
+    padding-top: 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    header nav .left img {
+      width: 5rem;
+      border: solid;
+      border-radius: 50%; }
+    header nav .right ul {
+      width: 40vw;
+      margin-right: 5rem;
+      display: flex;
+      list-style-type: none;
+      justify-content: space-between; }
+      header nav .right ul li a {
+        transition: all 0.2s;
+        color: #FFFFFF;
+        text-decoration: none; }
+        header nav .right ul li a:hover {
+          color: #7fb6c9; }
+  header .content {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%); }
+    header .content h4 {
+      text-align: center;
+      font-size: 25px;
+      color: #FFFFFF;
+      line-height: 3rem; }
+      header .content h4:before {
+        display: block;
+        content: "I am Mayur Goyal"; }
+      header .content h4:after {
+        display: block;
+        content: "Full Stack Developer"; }
+    header .content button {
+      margin-top: 2rem;
+      margin-left: 4rem;
+      padding: 0.5rem;
+      background-color: #7fb6c9;
+      border: solid #161616;
+      border-radius: 5rem;
+      cursor: pointer; }
+
+.body-content {
+  padding-top: 2rem; }
+  .body-content .about {
+    padding: 8rem;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+    align-items: center; }
+    .body-content .about .skills-column {
+      text-align: center; }
+      .body-content .about .skills-column h2 {
+        padding-bottom: 5rem; }
+    .body-content .about .skills {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto auto;
+      grid-gap: 20px;
+      margin-right: 2rem; }
+      .body-content .about .skills div {
+        transition: all 0.2s;
+        border: solid #161616 1px;
+        padding: 2rem 2rem;
+        background-color: #7fb6c9;
+        text-align: center; }
+        .body-content .about .skills div:hover {
+          background-color: #0baee4; }
+    .body-content .about .education {
+      border: solid white;
+      padding: 1rem 12rem;
+      border-radius: 5%;
+      border-left-color: red;
+      text-align: center;
+      background-color: #7fb6c9; }
+      .body-content .about .education ul {
+        font-size: large;
+        font-weight: 900;
+        line-height: 3rem;
+        margin: 3.5rem;
+        list-style-type: none;
+        text-decoration: none; }
+      .body-content .about .education:hover {
+        background-color: #0baee4; }
+  .body-content .about-text {
+    text-align: center; }
+  .body-content hr {
+    border: solid red;
+    margin-top: 2rem;
+    width: 40vw;
+    margin-left: 30vw; }
+  .body-content .work-box {
+    height: 100vh;
+    padding-top: 2rem;
+    padding-right: 1.5rem;
+    text-align: center;
+    background-color: #7fb6c9; }
+    .body-content .work-box h2 {
+      padding-bottom: 2rem; }
+    .body-content .work-box .work {
+      display: grid;
+      grid-template-columns: auto auto auto; }
+      .body-content .work-box .work div {
+        text-align: center;
+        margin-left: 2rem; }
+        .body-content .work-box .work div h3 {
+          padding-top: 2rem; }
+        .body-content .work-box .work div hr {
+          margin-left: 70px;
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+          width: 70%; }
+        .body-content .work-box .work div img {
+          transition: all 0.2s;
+          width: 100%;
+          height: 20rem;
+          border: solid #7fb6c9 1px;
+          border-left-color: #0baee4;
+          border-radius: 5%; }
+          .body-content .work-box .work div img:hover {
+            transform: scale(1.1); }
+        .body-content .work-box .work div a {
+          display: inline-block;
+          text-decoration: none;
+          color: #161616;
+          font-weight: 900;
+          padding: 0.5rem;
+          background-color: #FFFFFF;
+          border: solid red 0px;
+          border-radius: 10%;
+          margin-top: 1rem; }
+          .body-content .work-box .work div a:hover {
+            background-color: #FE5F1E; }
+
+.contact {
+  height: 100vh;
+  background-color: #161616; }
+  .contact h2 {
+    padding-top: 2rem;
+    color: #FFFFFF;
+    text-align: center; }
+  .contact .gmail img {
+    cursor: pointer;
+    width: 5rem;
+    margin-left: 50%;
+    margin-top: 4rem;
+    transform: translate(-50%, -50%); }
+  .contact .gmail h3 {
+    visibility: hidden;
+    text-align: center;
+    color: #FFFFFF; }
+
+.contact-details {
+  padding: 2rem 0rem; }
+  .contact-details ul {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around; }
+    .contact-details ul li {
+      list-style-type: none; }
+    .contact-details ul img {
+      cursor: pointer;
+      transition: all 0.2s;
+      width: 5rem; }
+      .contact-details ul img:hover {
+        transform: scale(1.5); }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FE5F1E;
+  padding: 2rem;
+  height: 5rem; }
+  footer span {
+    font-size: large;
+    font-weight: bold; }
