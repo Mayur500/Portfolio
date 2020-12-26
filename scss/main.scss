@@ -177,25 +177,26 @@ header {
     margin-left: 30vw;
   }
 }
-.work-content{
+.work-content {
   @extend .width-height;
   text-align: center;
-  background-color:$primary;
-  padding-top:2rem;
+  background-color: $primary;
+  padding-top: 2rem;
   box-sizing: border-box;
 }
 .work {
+  display: flex;
   text-align: center;
+  justify-content: space-around;
   padding-top: 2rem;
   background-color: $primary;
   div {
     h3 {
       padding-top: 2rem;
     }
-
     hr {
       margin-bottom: 2rem;
-      margin:1rem 0rem 2rem 70px;
+      margin: 1rem 0rem 2rem 70px;
       width: 70%;
       border: solid $primary-hover;
     }
@@ -204,7 +205,7 @@ header {
 
     img {
       transition: all 0.2s;
-      width: 90%;
+      width: 80%;
       height: 40vh;
       border: solid $primary 1px;
       border-left-color: $primary-dark;
@@ -231,10 +232,6 @@ header {
       }
     }
   }
-
-  display: flex;
- text-align: center;
-  margin: auto auto;
 }
 
 .contact {
@@ -284,7 +281,7 @@ header {
     }
   }
 }
-//footer 
+//footer
 footer {
   display: flex;
   justify-content: space-between;

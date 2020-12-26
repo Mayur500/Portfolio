@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,400;1,700&display=swap");
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   html {
     width: 100vw;
     font-size: 6px; }
@@ -14,25 +14,31 @@
     height: 100% !important;
     box-sizing: border-box;
     flex-direction: column !important;
-    font-size: large !important;
+    font-size: medium !important;
+    padding-top: 0px;
     justify-content: space-around !important;
     margin: 0 0 !important; }
     .about .education {
-      width: 100vw !important; }
+      width: 90vw !important;
+      margin: 0 auto !important; }
     .about .education ul {
-      line-height: 5rem !important; }
+      line-height: 3rem !important; }
     .about .skills div {
-      padding: 1rem 1rem !important; }
+      padding: 1rem 1rem !important;
+      width: auto;
+      height: auto; }
   .work {
+    padding-top: 0px !important;
     flex-direction: column;
     justify-content: space-around !important; }
     .work h3 {
-      font-size: large; }
+      font-size: medium; }
     .work img {
-      height: 20vh !important; }
+      height: 20vh !important;
+      width: 50vw !important; }
     .work a {
       display: block !important;
-      width: 8vw;
+      width: 12vw;
       margin-left: 50%;
       transform: translate(-50%, 0); }
   .contact {
@@ -194,12 +200,11 @@ header {
   box-sizing: border-box; }
 
 .work {
-  text-align: center;
-  padding-top: 2rem;
-  background-color: #7fb6c9;
   display: flex;
   text-align: center;
-  margin: auto auto; }
+  justify-content: space-around;
+  padding-top: 2rem;
+  background-color: #7fb6c9; }
   .work div {
     text-align: center;
     margin-left: 2rem; }
@@ -212,7 +217,7 @@ header {
       border: solid #fe5f1e; }
     .work div img {
       transition: all 0.2s;
-      width: 90%;
+      width: 80%;
       height: 40vh;
       border: solid #7fb6c9 1px;
       border-left-color: #0baee4;

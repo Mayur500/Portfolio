@@ -1,94 +1,103 @@
-
-@media (max-width: 390px) {
-    html {
-      width: 100vw;
-      font-size: 6px;
-    }
-    nav {
-      .right {
-        ul {
-          width: 50vw !important;
-          justify-content: space-between !important;
-          font-size: 2rem !important;
-        }
-      }
-    }
-    .content {
-      h4 {
-        font-size: 15px !important;
-        line-height: 5rem !important;
-      }
-    }
-    .about {
-      height: 100% !important;
-      box-sizing: border-box;
-      flex-direction: column !important;
-      font-size: large !important;
-      justify-content: space-around !important;
-      .education {
-        width: 100vw !important;
-      }
-      margin: 0 0 !important;
-  
-      .education ul {
-        line-height: 5rem !important;
-      }
-      .skills div {
-        padding: 1rem 1rem !important;
-      }
-    }
-    .work {
-      h3 {
-        font-size: large;
-      }
-      img {
-        height: 20vh !important;
-      }
-  
-      flex-direction: column;
-      justify-content: space-around !important;
-  
-      a {
-        display: block !important;
-        width: 8vw;
-        margin-left: 50%;
-        transform: translate(-50%, 0);
-      }
-    }
-  
-    .contact {
-      padding-top: 8rem;
-      .gmail {
-        padding-top: 4rem;
-        h3 {
-          font-size: large;
-        }
-      }
-    }
-    .contact-details {
-      padding-top: 20rem;
+@mixin responsive-area{
+  nav {
+    .right {
       ul {
-        flex-direction: column !important;
-        align-items: center !important;
-        img {
-          margin-top: 4rem !important;
-        }
-      }
-    }
-    hr {
-      margin-left: 29vw !important;
-      width: 40vw !important;
-    }
-  
-    footer {
-      padding: 2rem !important;
-      font-weight: normal !important;
-      height: 2rem !important;
-  
-      span {
-        font-weight: normal !important;
-        font-size: 7px !important;
+        width: 50vw !important;
+        justify-content: space-between !important;
+        font-size: 2rem !important;
       }
     }
   }
-  
+  .content {
+    h4 {
+      font-size: 15px !important;
+      line-height: 5rem !important;
+    }
+  }
+  .about {
+    height: 100% !important;
+    box-sizing: border-box;
+    flex-direction: column !important;
+    font-size: medium !important;
+    padding-top:0px;
+    justify-content: space-around !important;
+    .education {
+      width: 90vw !important;
+      margin:0 auto !important;
+    }
+    margin: 0 0 !important;
+
+    .education ul {
+      line-height: 3rem !important;
+    }
+    .skills div {
+      padding: 1rem 1rem !important;
+      width:auto;
+      height: auto;
+    }
+  }
+  .work {
+    padding-top:0px !important;
+    h3 {
+      font-size:medium;
+    }
+    img {
+      height: 20vh !important;
+      width:50vw !important;
+    }
+
+    flex-direction: column;
+    justify-content: space-around !important;
+
+    a {
+      display: block !important;
+      width: 12vw;
+      margin-left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  .contact {
+    padding-top: 8rem;
+    .gmail {
+      padding-top: 4rem;
+      h3 {
+        font-size: large;
+      }
+    }
+  }
+  .contact-details {
+    padding-top: 20rem;
+    ul {
+      flex-direction: column !important;
+      align-items: center !important;
+      img {
+        margin-top: 4rem !important;
+      }
+    }
+  }
+  hr {
+    margin-left: 29vw !important;
+    width: 40vw !important;
+  }
+
+  footer {
+    padding: 2rem !important;
+    font-weight: normal !important;
+    height: 2rem !important;
+
+    span {
+      font-weight: normal !important;
+      font-size: 7px !important;
+    }
+  }
+}
+
+@media (max-width:400px) {
+  html {
+    width: 100vw;
+    font-size: 6px;
+  }
+  @include responsive-area;
+  }
+ 
