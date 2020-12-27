@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,400;1,700&display=swap");
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   html {
     width: 100vw;
     font-size: 6px; }
+  header, .work-content, .contact, .about-text {
+    height: calc(var(--vh, 1vh) * 100); }
   nav .right ul {
     width: 50vw !important;
     justify-content: space-between !important;
@@ -77,7 +79,8 @@ body {
 html,
 body {
   scroll-behavior: smooth;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
 
 .width-height, header, .about-text, .work-content, .contact {
   height: 100vh;

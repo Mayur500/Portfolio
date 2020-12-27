@@ -1,4 +1,9 @@
 @mixin responsive-area{
+
+  header,.work-content,.contact,.about-text{
+    height: calc(var(--vh, 1vh) * 100);
+  }
+ 
   nav {
     .right {
       ul {
@@ -93,7 +98,7 @@
   }
 }
 
-@media (max-width:400px) {
+@media (max-width:480px) {
   html {
     width: 100vw;
     font-size: 6px;
