@@ -21,11 +21,3 @@ gmail_image.addEventListener("mouseover", function (e) {
   gmail_image.style.transition = "all 2s";
   gmail_h.style.visibility = "visible";
 });
-
-function appHeight() {
-  const doc = document.documentElement
-  doc.style.setProperty('--vh', (window.innerHeight*.01) + 'px');
-}
-
-window.addEventListener('resize', appHeight);
-appHeight();
